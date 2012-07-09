@@ -1,4 +1,5 @@
-layout : disqus
+javascripts: 
+layout : custom
 disqus :
   short_name : jekyllbootstrap
 livefyre :

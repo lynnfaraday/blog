@@ -1,26 +1,24 @@
 ---
 title: Home
 description:
+
+layout : page
 ---
 
-<h2>Start</h2>
-<p>
-  Ruhoh is all about the command-line.
-  <br>Check out the goods:
-</p>
-<pre><code>$ ruhoh help</code></pre>
+      <a href="/blogrss.xml"><img src="/assets/lynn/media/rss-icon.jpg" width="100"/>New! RSS Feed</a>
+{{# recent_posts_1}}
+{{>post_summary}}
+{{/recent_posts_1}}
 
 
-<h2>Latest Posts</h2>
-
-{{# posts_latest }}
-<div class="post">
-  <h3 class="title"><a href="{{url}}">{{title}}</a> <span class="date">{{ date }}</span></h3>
-
-  {{{ summary }}}
-
-  <div class="more">
-    <a href="{{url}}" class="btn">read more..</a>
-  </div>
-</div>
-{{/ posts_latest }}
+<hr>
+    <div class="pagination">
+      <ul>
+        <ul>
+            <li class="prev"><a>&larr; Newer Posts</a></li>
+            <li><a href="/archive.html">Archive</a></li>
+            <li class="next"><a href="/page/2" title="Older">Older Posts&rarr;</a></li>
+        </ul>
+      </ul>
+    </div>
+    

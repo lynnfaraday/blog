@@ -1,16 +1,13 @@
-title : Blog Title
-tagline: Blog Tagline
+title : Lynn's Corner
+tagline: 
 author :
-  name : Firstname Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : Lynn O'Meara
+  email : lynn@wordsmyth.org
+  github : lynnfaraday
+  twitter : 
+  feedburner : 
 
 navigation :
   - archive.html
   - tags.html
-  - categories.html
-  - pages.html
-  - about.md
-  
+  - about.html

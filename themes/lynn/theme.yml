@@ -1,0 +1,29 @@
+{
+  "stylesheets" : {
+    "default" : [
+      "bootstrap.min.css",
+      "style.css",
+      "jquery.popeye.css",
+      "jquery.popeye.style.css"
+    ],
+   
+    "widgets" : {
+      "google_prettify" : "twitter-bootstrap.css"
+    }
+    
+  },
+
+  "javascripts" : {
+    "default" : [
+    "jquery.min-1.6.2.js",
+    "jquery.popeye-2.1.js",
+    "popeye_options.js",
+    "share_this.js"
+    ]
+  },
+  
+  "manifest" : {
+    "author" : "Jacob Thornton and Mark Otto",
+    "website" : "http://twitter.github.com/bootstrap"
+  }
+}
