@@ -12,21 +12,33 @@ layout : default
 <div class="row">
   <div class="span12">
   
-	<a href="/blogrss.xml"><img src="/assets/lynn/media/rss-icon.jpg" width="100"/>New! RSS Feed</a>
+	<a href="/blogrss.xml"><img src="/assets/lynn/media/rss-icon.jpg" width="100"/>RSS Feed</a>
 
-	{{page.pagination.posts}}
-
-	{{# page.pagination.posts}}
+	{{# page.pagination.posts?to_posts}}
      {{>post_summary}}
-	{{/ page.pagination.posts}}
+	{{/ page.pagination.posts?to_posts}}
 
 	<hr>
 	    <div class="pagination">
 	      <ul>
 	        <ul>
-	            <li class="prev"><a href="/page/{{page.pagination.previous_page}}">&larr; Newer Posts</a></li>
-	            <li><a href="/archive.html">Archive</a></li>
-	            <li class="next"><a href="/page/{{page.pagination.next_page}}" title="Older">Older Posts&rarr;</a></li>
+		
+					{{# page.pagination.previous_page }}
+		            <li class="prev"><a href="{{page.pagination.previous_page}}">&larr; Older Posts</a></li>
+			          {{/ page.pagination.previous_page }}
+			          {{^ page.pagination.previous_page }}
+			            <li class="prev disabled"><a>&larr; Older Posts</a></li>
+			          {{/ page.pagination.previous_page }}
+						
+						<li><a href="/archive.html">Archive</a></li>
+			            
+						{{# page.pagination.next_page }}
+			            <li class="prev"><a href="{{page.pagination.next_page}}">&rarr; Newer Posts</a></li>
+				          {{/ page.pagination.next_page }}
+				          {{^ page.pagination.next_page }}
+				            <li class="prev disabled"><a>&rarr; Newer Posts</a></li>
+				          {{/ page.pagination.next_page }}
+			           
 	        </ul>
 	      </ul>
 	    </div>
