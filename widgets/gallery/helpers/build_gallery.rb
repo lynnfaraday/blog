@@ -4,11 +4,11 @@ class Ruhoh
   module Templaters
     module Helpers    
     
-      def gallery(id)
+      def build_gallery(id)
         id.to_s.chomp!
         Ruhoh::Friend.say { plain "Processing gallery: '#{id}'" }
         
-        gallery_config = self.context['site']['config']['gallery']
+        gallery_config = self.context['widgets']['gallery']['config']
         
         if (gallery_config['provider'] == 'flickr')
           begin
@@ -30,6 +30,12 @@ class Ruhoh
             error_text = "<div style='color:red'>!No gallery support for '#{gallery_config['provider']}'</div>"
             photos = []
           end
+          #self.context['gallery_results'] = 
+          #{
+          #  'photos' => photos,
+          #  'error' => error_text
+          #}
+          
           { 'gallery_photos' => photos, 'gallery_error' => error_text }
         end
       end

@@ -15,9 +15,6 @@
 
   "javascripts" : {
     "default" : [
-    "jquery.min-1.6.2.js",
-    "jquery.popeye-2.1.js",
-    "popeye_options.js",
     "share_this.js"
     ]
   },
