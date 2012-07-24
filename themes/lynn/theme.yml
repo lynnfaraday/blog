@@ -14,9 +14,7 @@
   },
 
   "javascripts" : {
-    "default" : [
-    "share_this.js"
-    ]
+    "default" : []
   },
   
   "manifest" : {

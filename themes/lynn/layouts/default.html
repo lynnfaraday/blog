@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . '/cookies.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/blog/cookies.php');
 if (!check_auth())
 	{
 	   header( 'Location: /login.php' ) ;
@@ -39,7 +39,7 @@ if (!check_auth())
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/blog.html">{{ site.title }}</a>
+          <a class="brand" href="/">{{ site.title }}</a>
           <ul class="nav">
             {{# site.navigation?to_pages }}
               {{> pages_list }}
