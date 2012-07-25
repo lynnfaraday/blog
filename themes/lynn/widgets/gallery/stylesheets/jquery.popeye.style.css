@@ -154,7 +154,7 @@
 }
 
 #ppy2 .ppy-loading {
-    background-image:   url(../../media/popeye/loading2.gif);
+    background-image:   url(/assets/lynn/media/gallery/popeye/loading2.gif);
     background-repeat:  no-repeat;
     background-position:center;
 }
@@ -202,19 +202,19 @@
 }
 
 #ppy2 .ppy-prev {
-    background:     url(/assets/lynn/media/popeye/prev3.png) no-repeat center;
+    background:     url(/assets/lynn/media/gallery/popeye/prev3.png) no-repeat center;
 }
 
 #ppy2 .ppy-next {
-    background:     url(/assets/lynn/media/popeye/next3.png) no-repeat center;
+    background:     url(/assets/lynn/media/gallery/popeye/next3.png) no-repeat center;
 }
 
 #ppy2 .ppy-switch-enlarge {
-    background:     url(/assets/lynn/media/popeye/enlarge4.png) no-repeat center;
+    background:     url(/assets/lynn/media/gallery/popeye/enlarge4.png) no-repeat center;
 }
 
 #ppy2 .ppy-switch-compact {
-    background:     url(/assets/lynn/media/popeye/compact4.png) no-repeat center;
+    background:     url(/assets/lynn/media/gallery/popeye/compact4.png) no-repeat center;
 }
 
 #ppy2 .ppy-nav a:hover {

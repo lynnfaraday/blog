@@ -2,9 +2,7 @@
   "stylesheets" : {
     "default" : [
       "bootstrap.min.css",
-      "style.css",
-      "jquery.popeye.css",
-      "jquery.popeye.style.css"
+      "style.css"
     ],
    
     "widgets" : {

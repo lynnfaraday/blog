@@ -6,7 +6,7 @@ class Ruhoh
     
       def build_gallery(id)
         id.to_s.chomp!
-        Ruhoh::Friend.say { plain "Processing gallery: '#{id}'" }
+        Ruhoh::Friend.say { green "processing gallery: '#{id}'" }
         
         gallery_config = self.context['widgets']['gallery']['config']
         
