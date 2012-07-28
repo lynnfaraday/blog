@@ -19,29 +19,8 @@ layout : default
 	{{/ page.pagination.posts?to_posts}}
 
 	<hr>
-	    <div class="pagination">
-	      <ul>
-	        <ul>
-		
-					{{# page.pagination.previous_page }}
-		            <li class="prev"><a href="{{page.pagination.previous_page}}">&larr; Newer Posts</a></li>
-			          {{/ page.pagination.previous_page }}
-			          {{^ page.pagination.previous_page }}
-			            <li class="prev disabled"><a>&larr; Older Posts</a></li>
-			          {{/ page.pagination.previous_page }}
-						
-						<li><a href="/archive.html">Archive</a></li>
-			            
-						{{# page.pagination.next_page }}
-			            <li class="prev"><a href="{{page.pagination.next_page}}">&rarr; Older Posts</a></li>
-				          {{/ page.pagination.next_page }}
-				          {{^ page.pagination.next_page }}
-				            <li class="prev disabled"><a>&rarr; Newer Posts</a></li>
-				          {{/ page.pagination.next_page }}
-			           
-	        </ul>
-	      </ul>
-	    </div>
+     
+     {{> index_pagination_bar}}
 	
   </div>
 </div>
