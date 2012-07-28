@@ -1,1 +1,4 @@
 compiled/*
+posts/*
+*.php
+media/about

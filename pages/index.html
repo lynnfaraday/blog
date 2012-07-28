@@ -1,26 +1,25 @@
 ---
 title: Home
 description:
+
+layout : default
 ---
 
-<h2>Start</h2>
-<p>
-  Ruhoh is all about the command-line.
-  <br>Check out the goods:
-</p>
-<pre><code>$ ruhoh help</code></pre>
+<div class="page-header">
+  <h1>{{ page.title }} {{# page.tagline }} <small>{{ . }}</small>{{/ page.tagline }}</h1>
+</div>
 
+<div class="row">
+  <div class="span12">
+  
+	{{# page.pagination.posts?to_posts}}
+     {{>post_summary}}
+	{{/ page.pagination.posts?to_posts}}
 
-<h2>Latest Posts</h2>
-
-{{# posts_latest }}
-<div class="post">
-  <h3 class="title"><a href="{{url}}">{{title}}</a> <span class="date">{{ date }}</span></h3>
-
-  {{{ summary }}}
-
-  <div class="more">
-    <a href="{{url}}" class="btn">read more..</a>
+	<hr>
+     
+     {{> index_pagination_bar}}
+	
   </div>
 </div>
-{{/ posts_latest }}
+
