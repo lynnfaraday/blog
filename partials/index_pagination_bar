@@ -1,0 +1,17 @@
+	{{# page.pagination.prev_truncated}}
+     <a href="{{page.pagination.prev_truncated}}">&larr;</a>
+	{{/ page.pagination.prev_truncated}}
+
+	{{# page.pagination.prev}}
+    <a href="{{url}}">{{page_number}}</a>
+	{{/ page.pagination.prev}}
+
+    {{page.pagination.page_number}}
+
+	{{# page.pagination.next}}
+    <a href="{{url}}">{{page_number}}</a>
+	{{/ page.pagination.next}}
+	
+	{{# page.pagination.next_truncated}}
+     <a href="{{page.pagination.next_truncated}}">&rarr;</a>
+	{{/ page.pagination.next_truncated}}
