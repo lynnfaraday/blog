@@ -1,27 +1,31 @@
-{{#gallery_error}}
-   {{{gallery_error}}}
-{{/gallery_error}}
-
-{{^gallery_error}}
-
+<hr/>
 <table>
 
 <tr><td colspan="2">
-<b>Gallery</b><br/>
-<i>Click on the photo to enlarge, or click on the link to view on {{widgets.gallery.config.provider}}.</i>
+<i>Click on the photo to enlarge.</i>
 </td></tr>
 	
-{{#gallery_photos}}
+{{#page.gallery_photos}}
 <tr><td>
-<a href="{{med_image_url}}">
-<img src="{{small_image_url}}" alt="{{caption}}" width="250px" /></a>
+<a href="{{enlarge_image_url}}">
+<img src="{{preview_image_url}}" alt="{{caption}}" width="250px" /></a>
 </td>
 <td>
-{{caption}} on <a href="{{view_url}}" target="_blank">{{host}}</a>
+<a href="{{view_url}}" target="_blank">{{caption}}</a>
+</td>
+</tr>
+{{/page.gallery_photos}}
+
+{{#gallery_photos}}
+<tr><td>
+<a href="{{enlarge_image_url}}">
+<img src="{{preview_image_url}}" alt="{{caption}}" width="250px" /></a>
+</td>
+<td>
+<a href="{{view_url}}" target="_blank">{{caption}}</a>
 </td>
 </tr>
 {{/gallery_photos}}
 
 </table>
-
-{{/gallery_error}}
+<hr/>

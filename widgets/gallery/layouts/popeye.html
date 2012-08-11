@@ -1,18 +1,21 @@
-{{#gallery_error}}
-   {{{gallery_error}}}
-{{/gallery_error}}
-
-{{^gallery_error}}
-<noscript>Please enable JavaScript to view the photo gallery.</noscript>
+<noscript><font color="blue"><b>For optimum photo gallery viewing, please enable JavaScript.</b></font>
+</noscript>
 
 <div class="ppy" id="ppy2">
 <ul class="ppy-imglist">
 
 
+{{#page.gallery_photos}}
+<li><a href="{{enlarge_image_url}}">
+<img src="{{preview_image_url}}" alt="{{caption}}" width="250px" /></a>
+<span class="ppy-extcaption"><a href="{{view_url}}" target="_blank">{{caption}}</a></span>
+</li>
+{{/page.gallery_photos}}
+
 {{#gallery_photos}}
-<li><a href="{{med_image_url}}">
-<img src="{{small_image_url}}" alt="{{caption}}" width="250px" /></a>
-<span class="ppy-extcaption">{{caption}} on <a href="{{view_url}}" target="_blank">{{host}}</a></span>
+<li><a href="{{enlarge_image_url}}">
+<img src="{{preview_image_url}}" alt="{{caption}}" width="250px" /></a>
+<span class="ppy-extcaption"><a href="{{view_url}}" target="_blank">{{caption}}</a></span>
 </li>
 {{/gallery_photos}}
 
@@ -38,5 +41,3 @@
 </div>
 
 </div>
-
-{{/gallery_error}}

@@ -1,7 +1,7 @@
 class Ruhoh
   module Compiler
     module Pages
-      def self.run(target, page)
+      def self.run(target, opts)
         FileUtils.cd(target) {
            # FileUtils.mv("index.html", "blog.html")
             FileUtils.mv("rss.xml", "blogrss.xml")

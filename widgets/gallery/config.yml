@@ -1,12 +1,6 @@
 javascripts: 
     [jquery.min-1.6.2.js, jquery.popeye-2.1.js, popeye_options.js]
 
-layout : grid
+layout : popeye
 
 provider: flickr
-
-flickr:
-    api_key: todo
-    shared_secret: todo 
-    access_token: todo
-    access_secret: todo

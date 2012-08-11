@@ -7,7 +7,7 @@ production_url : http://blog.wordsmyth.org
 root_folder: /blog/
 
 rss:
-  limit: 12
+  limit: 20
   
 posts:
   permalink: /posts/:year-:month-:day-:title.html
@@ -16,3 +16,11 @@ posts:
 
 pages:
   permalink: 'pretty'
+  
+pagination:
+  base_page: index.html
+  per_page: 10
+  
+publish:
+  host: www.site.com
+  root: ~/blog

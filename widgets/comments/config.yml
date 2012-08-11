@@ -1,9 +1,9 @@
 javascripts: 
-layout : custom
+layout : disqus
 disqus :
-  short_name : jekyllbootstrap
+  short_name : wordsmythblog
 livefyre :
-  site_id : 123
+  site_id : 12345
 intensedebate :
   account : 123abc
 facebook :

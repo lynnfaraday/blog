@@ -6,7 +6,8 @@
     ],
    
     "widgets" : {
-      "google_prettify" : "twitter-bootstrap.css"
+      "google_prettify" : "twitter-bootstrap.css",
+      "gallery" : ["jquery.popeye.css", "jquery.popeye.style.css"]
     }
     
   },

@@ -4,7 +4,11 @@
 </div>
 
 <div class="row">
+
   <div class="span8">
+
+<h6><span>{{ date }}</span></h6>
+
     {{{ content }}}  
 
  <hr>
@@ -14,10 +18,6 @@
   </div>
   
   <div class="span4">
-    <h4>Published</h4>
-    <div class="date"><span>{{ date }}</span></div>
-    <br>
-    
     <h4>Tags</h4>
     <ul class="tag_box">
     {{# tags?to_tags }}
