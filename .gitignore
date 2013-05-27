@@ -1,1 +1,8 @@
 compiled/*
+posts/*
+Posts.txt
+.DS_STORE
+config.yml
+data.yml
+about
+about.md
