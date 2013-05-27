@@ -14,8 +14,12 @@
 /* posts index */
 .post > h3.title {
   position:relative;
-  padding-top:10px;
+  padding-top:5px;
+  padding-left:5px;
+  padding-right:5px;
+  background-color:#B2C2E0;
 }
+
 .post > h3.title span.date { 
   position:absolute;
   right:0;

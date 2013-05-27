@@ -1,8 +1,18 @@
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . '/blog/cookies.php');
+if (!check_auth())
+	{
+	   header( 'Location: /login.php' ) ;
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {{# page.description }}
     <meta name="description" content="{{ . }}">
@@ -19,6 +29,8 @@
       bootstrap.min.css
       style.css
       google_prettify/sons-of-obsidian.css
+	  gallery/jquery.popeye.css
+	  gallery/jquery.popeye.style.css
     {{/ stylesheets.load }}
 
     <!-- Le fav and touch icons -->
@@ -28,6 +40,13 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
+
+  <link rel="shortcut icon" href="/assets/lynn/media/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/lynn/media/camel_touchicon_57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/lynn/media/camel_touchicon_62.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/lynn/media/camel_touchicon_114.png">
+
+
   </head>
 
   <body>
@@ -60,9 +79,6 @@
       </div>
 
     </div> <!-- /container -->
-
-    {{{ widgets.google_prettify }}}
-    {{{ widgets.analytics }}}
     
   </body>
 </html>

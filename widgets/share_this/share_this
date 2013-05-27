@@ -1,0 +1,10 @@
+<script src="{{this_path}}/javascripts/share_this.js"></script>
+
+  <br/>
+    <div style="color:gray;font-style:italic">This blog is for friends and family. <br/>Please share responsibly.</div>
+<span class='st_facebook_large' displayText='Facebook' 
+st_url='{{this_config.production_url}}{{this_page.url}}'></span>
+<span class='st_googleplus_large' displayText='Google +' 
+st_url='{{this_config.production_url}}{{this_page.url}}'></span>
+<span class='st_email_large' displayText='Email' 
+st_url='{{this_config.production_url}}{{this_page.url}}'></span>

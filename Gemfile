@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 gem 'psych', "~> 1.3"
-gem 'ruhoh', "~> 2.1"
+gem 'ruhoh', "2.1.lf3"
+gem 'flickr_badge_maker', "~> 0.0"
 
 # To enable asset packaging and processing via sprockets:
 #
