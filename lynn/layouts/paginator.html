@@ -10,13 +10,6 @@ layout : default
 
         {{{ summary }}}
 
-        <div class="more">
-          <a href="{{url}}" class="btn btn-small">full post..</a>
-        </div>
-
-
-<!--
-
 <ul class="tag_box inline">
  <li><i class="icon-tags"></i></li>
 {{# tags }}
@@ -24,10 +17,18 @@ layout : default
 {{/ tags }}
 </ul>
 
+{{{widgets.comments_count}}}
+
+<!--
+<div class="more">
+  <a href="{{url}}" class="btn btn-small">full post..</a>
+</div>
+-->
+
 <br/>
 
 {{{widgets.share_this}}}
--->
+
       </div>
     {{/collection.paginator}}
     

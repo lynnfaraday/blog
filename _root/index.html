@@ -11,11 +11,6 @@ description:
 
   {{{ summary }}}
 
- <div class="more">
-    <a href="{{url}}" class="btn btn-small">full post..</a>
-  </div>
-
-<!--
 <ul class="tag_box inline">
   <li><i class="icon-tags"></i></li>
 {{# tags }}
@@ -23,9 +18,16 @@ description:
 {{/ tags }}
 </ul>
 
+<!--
+<div class="more">
+  <a href="{{url}}" class="btn btn-small">full post..</a>
+</div>
+-->
+
+{{{widgets.comments_count}}}
+
 <br/>
 {{{widgets.share_this}}}
--->
 
 </div>
 {{/ posts.paginator }}
