@@ -5,10 +5,17 @@ layout : default
 <div class="row-fluid">
   <div class="span12">
     {{#collection.paginator}}
-      <div class="{{ collection.resource_name}}">
+      <div class="post">
         <h3 class="title"><a href="{{url}}">{{title}}</a> <span class="date">{{ date }}</span></h3>
 
-        {{{ summary }}}
+
+		  {{{ content }}}
+
+		<!--
+		<div class="more">
+		  <a href="{{url}}" class="btn btn-small">full post..</a>
+		</div>
+		-->
 
 <ul class="tag_box inline">
  <li><i class="icon-tags"></i></li>
@@ -19,11 +26,6 @@ layout : default
 
 {{{widgets.comments_count}}}
 
-<!--
-<div class="more">
-  <a href="{{url}}" class="btn btn-small">full post..</a>
-</div>
--->
 
 <br/>
 
