@@ -107,13 +107,13 @@
 }
 
 #ppy2.ppy-active {
-    width:          400px;
+    width:          290px;
     float:          none;
     margin:         0 0 50px 50px;
 }
 
 #ppy2 .ppy-outer {
-    padding:        0 46px 0 0;
+    padding:        0 46px 0px 0;
     
 }
 #ppy2 .ppy-stagewrap {
