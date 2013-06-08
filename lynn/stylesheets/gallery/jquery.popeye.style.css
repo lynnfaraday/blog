@@ -101,9 +101,9 @@
 #ppy2.ppy-expanded .ppy-caption {
     margin:         0;
     padding:        10px;
-    border-bottom:  1px solid #333;
+    /*border-bottom:  1px solid #333;*/
     color:          #fff;
-    background:     #666;
+    background:     #fff;
 }
 
 #ppy2.ppy-active {

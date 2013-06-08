@@ -24,20 +24,20 @@ if (!check_auth())
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-<!-- Stylesheet and Javascript config for gallery widget -->
-  <link href='/assets/stylesheets/gallery/jquery.popeye.css' media='screen' rel='stylesheet' type='text/css'/> 
-  <link href='/assets/stylesheets/gallery/jquery.popeye.style.css' media='screen' rel='stylesheet' type='text/css'/>
 
-<script src="/assets/javascripts/gallery/jquery.min-1.6.2.js"></script>
-<script src="/assets/javascripts/gallery/jquery.popeye-2.1.js"></script>
-<script src="/assets/javascripts/gallery/popeye_options.js"></script>
-<!-- End gallery config >
-
+	{{# javascripts.load }}
+	   gallery/jquery.min-1.6.2.js
+	   gallery/jquery.popeye-2.1.js
+	   gallery/popeye_options.js
+	{{/ javascripts.load }}
+	
     <!-- Le styles -->
     {{# stylesheets.load }}
       bootstrap.min.css
       style.css
       google_prettify/sons-of-obsidian.css
+	  gallery/jquery.popeye.css
+	  gallery/jquery.popeye.style.css
     {{/ stylesheets.load }}
 
     <!-- Le fav and touch icons -->
