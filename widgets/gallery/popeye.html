@@ -2,13 +2,20 @@
 <div class="ppy" id="ppy2">
 <ul class="ppy-imglist">
 
+	{{#page.gallery_photos}}
+	<li><a href="{{enlarge_image_url}}">
+	<img src="{{preview_image_url}}" alt="{{caption}}" width="250px" /></a>
+	<span class="ppy-extcaption"><a href="{{view_url}}" target="_blank">{{caption}}</a></span>
+	</li>
+	{{/page.gallery_photos}}
 
-{{#page_data.gallery_photos}}
-<li><a href="{{enlarge_image_url}}">
-<img src="{{preview_image_url}}" alt="{{caption}}" width="250px" /></a>
-<span class="ppy-extcaption"><a href="{{view_url}}" target="_blank">{{caption}}</a></span>
-</li>
-{{/page_data.gallery_photos}}
+
+	{{#gallery_photos}}
+	<li><a href="{{enlarge_image_url}}">
+	<img src="{{preview_image_url}}" alt="{{caption}}" width="250px" /></a>
+	<span class="ppy-extcaption"><a href="{{view_url}}" target="_blank">{{caption}}</a></span>
+	</li>
+	{{/gallery_photos}}
 
 
 </ul>
